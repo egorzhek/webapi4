@@ -398,6 +398,18 @@
           }
         }
       },
+      "ScottPlot/4.1.16": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.6.1"
+        },
+        "compile": {
+          "lib/net5.0/ScottPlot.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/ScottPlot.dll": {}
+        }
+      },
       "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
@@ -1241,6 +1253,26 @@
         "version.txt"
       ]
     },
+    "ScottPlot/4.1.16": {
+      "sha512": "N5OZPHfYyCDCvlhxMFVc5glzuGrZuenes2tVgYQY7rK+UBxXNR+ThJvKkdeBXvAijDWZzLOUZ+weqwthxlHlFQ==",
+      "type": "package",
+      "path": "scottplot/4.1.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.txt",
+        "icon.ico",
+        "icon.png",
+        "lib/net461/ScottPlot.dll",
+        "lib/net461/ScottPlot.xml",
+        "lib/net5.0/ScottPlot.dll",
+        "lib/net5.0/ScottPlot.xml",
+        "lib/netstandard2.0/ScottPlot.dll",
+        "lib/netstandard2.0/ScottPlot.xml",
+        "scottplot.4.1.16.nupkg.sha512",
+        "scottplot.nuspec"
+      ]
+    },
     "System.Collections.Immutable/5.0.0": {
       "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
       "type": "package",
@@ -1790,6 +1822,7 @@
       "Microsoft.CodeAnalysis.Common >= 3.10.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.14",
       "Newtonsoft.Json >= 13.0.1",
+      "ScottPlot >= 4.1.16",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
@@ -1822,7 +1855,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\FastReports\\FastReport.Net Trial\\Nugets": {},
-        "C:\\Work\\tmp\\nuget": {},
+        "C:\\Users\\admin\\source\\repos\\webapi4\\Nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1868,6 +1901,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "ScottPlot": {
+            "target": "Package",
+            "version": "[4.1.16, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

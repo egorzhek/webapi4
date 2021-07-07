@@ -52,6 +52,7 @@ C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\Microsoft.CodeAna
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\Microsoft.Extensions.DependencyModel.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\ScottPlot.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\System.Data.SqlClient.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Docker\publish\de\Microsoft.CodeAnalysis.resources.dll

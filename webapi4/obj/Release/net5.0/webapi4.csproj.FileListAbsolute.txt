@@ -379,3 +379,4 @@ C:\Users\admin\source\repos\webapi4\webapi4\obj\Release\net5.0\webapi4.pdb
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Release\net5.0\webapi4.genruntimeconfig.cache
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Release\net5.0\Newtonsoft.Json.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Release\net5.0\webapi4.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\webapi4\webapi4\bin\Release\net5.0\ScottPlot.dll

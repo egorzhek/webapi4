@@ -28,7 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\FastReports\\FastReport.Net Trial\\Nugets": {},
-          "C:\\Work\\tmp\\nuget": {},
+          "C:\\Users\\admin\\source\\repos\\webapi4\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,6 +74,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[4.1.16, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

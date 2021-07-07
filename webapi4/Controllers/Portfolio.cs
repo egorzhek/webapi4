@@ -32,7 +32,11 @@ namespace webapi4.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(
+            [FromQuery] string Investor_Id,
+            [FromQuery] string DateFrom,
+            [FromQuery] string DateTo
+        )
         {
             string connectionString = String.Empty;
 
@@ -44,11 +48,15 @@ namespace webapi4.Controllers
                 Report report = new Report();
                 report.Load(Path.Combine(ReportPath, "Portfolio.frx"));
 
+                decimal[] values;
+                string[] labels;
+
                 using (SqlConnection connection =
                 new SqlConnection(connectionString))
                 {
                     string queryString = @"
-select [ActiveName] = 'Активы на 29.07.2021', [ActiveValue] = 150000.45
+select
+[ActiveName] = 'Активы на " + DateTo +  @"', [ActiveValue] = 150000.45
 union all
 select 'Пополнения', 85000.45
 union all
@@ -78,15 +86,13 @@ select 'Купоны', 2120.11";
                     }
 
                     string queryString2 = @"
-select [ActiveName] = 'Активы2 на 29.07.2021', [ActiveValue] = 150000.45
+select [ActiveName] = 'Акции', [ActiveValue] = 50.00
 union all
-select 'Пополнения2', 85000.45
+select 'Облигации', 20.00
 union all
-select 'Выводы2', 85000.45
+select 'Валюта', 20.00
 union all
-select 'Дивиденты2', 85000.45
-union all
-select 'Купоны2', 2120.11";
+select 'Фонды', 10.00";
 
                     SqlCommand command2 = new SqlCommand(queryString2, connection);
                     using (SqlDataAdapter sda2 = new SqlDataAdapter(command2))
@@ -99,9 +105,72 @@ select 'Купоны2', 2120.11";
                             vDataSet2.Tables[0].TableName = "Seconddata";
 
                             report.RegisterData(vDataSet2.Tables[0], "Seconddata");
+
+                            values = vDataSet2.Tables[0].AsEnumerable().Select(s => s.Field<decimal>("ActiveValue")).ToArray<decimal>();
+                            labels = vDataSet2.Tables[0].AsEnumerable().Select(s => s.Field<string>("ActiveName")).ToArray<string>();
                         }
                     }
+
+
+                    string queryString3 = @"
+select
+[InvestorName] = 'Дмитрий Иванович - " + Investor_Id + @"',
+[ActiveValue] = 50.00,
+[BeginActive] = 'Активы на " + DateFrom + @"',
+[BeginActiveVal] = 15000.34,
+[ProfitPeriod] = 'Доход за период " + DateFrom + @" - " + DateTo + @"',
+[ProfitPeriodVal] = 14885.67,
+[ProfitProcent] = 12.33
+";
+
+                    SqlCommand command3 = new SqlCommand(queryString3, connection);
+                    using (SqlDataAdapter sda2 = new SqlDataAdapter(command3))
+                    {
+                        using (DataSet vDataSet3 = new DataSet())
+                        {
+                            // это датасет из БД
+                            sda2.Fill(vDataSet3);
+
+                            vDataSet3.Tables[0].TableName = "Thirddata";
+
+                            report.RegisterData(vDataSet3.Tables[0], "Thirddata");
+                        }
+                    }
+
                 }
+
+                // формирование графика
+                var plt = new ScottPlot.Plot(600, 400);
+
+                // to double[]
+                var ary = new double[values.Length];
+                for (var ii = 0; ii < values.Length; ii++)
+                {
+                    ary[ii] = Convert.ToDouble(values[ii]);
+                }
+
+
+                var pie = plt.AddPie(ary);
+                pie.SliceLabels = labels;
+                pie.ShowPercentages = true;
+                //pie.ShowValues = true;
+                pie.ShowLabels = true;
+
+
+                pie.DonutSize = .45;
+                pie.OutlineSize = 2;
+
+                //plt.Legend();
+                var image1 = plt.Render();
+
+
+                // передача графика в картинку
+                var graph = report.FindObject("Picture1") as PictureObject;
+                graph.Image = image1;
+
+
+
+
 
                 report.Prepare();
 

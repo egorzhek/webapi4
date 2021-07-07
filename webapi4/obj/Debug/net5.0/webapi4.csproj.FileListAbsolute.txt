@@ -378,4 +378,5 @@ C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\ref\webapi4.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.pdb
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.genruntimeconfig.cache
+C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\ScottPlot.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.csproj.AssemblyReference.cache

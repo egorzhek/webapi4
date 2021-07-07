@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iPLLrmMtr492toYrZH/XVV4aEVygLmIw29tbZkshkF++iMqwpM1lDlY4FM+3j/N9LJTcSdqi204lU7ynL+YkZA==",
+  "dgSpecHash": "oNisJs3METTeRc3+czoCD/XFmXWj7bRfDdX6r7huoOsAeHNOnBGhwD7anLok0HWDi4WHZR3dh59N67Nuj9fhXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\webapi4\\webapi4\\webapi4.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\scottplot\\4.1.16\\scottplot.4.1.16.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",

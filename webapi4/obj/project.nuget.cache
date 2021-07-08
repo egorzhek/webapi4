@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oNisJs3METTeRc3+czoCD/XFmXWj7bRfDdX6r7huoOsAeHNOnBGhwD7anLok0HWDi4WHZR3dh59N67Nuj9fhXg==",
+  "dgSpecHash": "IFAOxzuyJyOSgAl07vNu5QX9pcktMX1NgsLpdFCFDGfl1nJADRHszmM/kdv/S8aWpiWEG9QXJmlCglC3z5wf8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\webapi4\\webapi4\\webapi4.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\fastreport.compat\\2021.2.3\\fastreport.compat.2021.2.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\fastreport.opensource\\2021.3.6\\fastreport.opensource.2021.3.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fastreport.compat\\2021.2.7\\fastreport.compat.2021.2.7.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fastreport.opensource\\2021.3.13\\fastreport.opensource.2021.3.13.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\fastreport.opensource.export.pdfsimple\\2021.3.6\\fastreport.opensource.export.pdfsimple.2021.3.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.7\\microsoft.aspnetcore.mvc.razor.extensions.5.0.7.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.7\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.7.nupkg.sha512",

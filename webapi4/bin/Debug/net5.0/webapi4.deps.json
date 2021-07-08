@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "webapi4/1.0.0": {
         "dependencies": {
-          "FastReport.OpenSource": "2021.3.6",
+          "FastReport.OpenSource": "2021.3.13",
           "FastReport.OpenSource.Export.PdfSimple": "2021.3.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.7",
           "Microsoft.CodeAnalysis.CSharp": "3.10.0",
@@ -333,7 +333,7 @@
           "webapi4.dll": {}
         }
       },
-      "FastReport.Compat/2021.2.3": {
+      "FastReport.Compat/2021.2.7": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.10.0",
           "Microsoft.CodeAnalysis.VisualBasic": "3.3.1",
@@ -344,14 +344,14 @@
           "runtimes/any/lib/netcoreapp3.0/FastReport.Compat.dll": {
             "rid": "any",
             "assetType": "runtime",
-            "assemblyVersion": "2021.2.3.0",
-            "fileVersion": "2021.2.3.0"
+            "assemblyVersion": "2021.2.7.0",
+            "fileVersion": "2021.2.7.0"
           }
         }
       },
-      "FastReport.OpenSource/2021.3.6": {
+      "FastReport.OpenSource/2021.3.13": {
         "dependencies": {
-          "FastReport.Compat": "2021.2.3",
+          "FastReport.Compat": "2021.2.7",
           "System.Drawing.Common": "4.6.1",
           "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.4.0",
@@ -359,8 +359,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/FastReport.dll": {
-            "assemblyVersion": "2021.3.6.0",
-            "fileVersion": "2021.3.6.0"
+            "assemblyVersion": "2021.3.13.0",
+            "fileVersion": "2021.3.13.0"
           }
         },
         "compile": {
@@ -369,7 +369,7 @@
       },
       "FastReport.OpenSource.Export.PdfSimple/2021.3.6": {
         "dependencies": {
-          "FastReport.OpenSource": "2021.3.6"
+          "FastReport.OpenSource": "2021.3.13"
         },
         "runtime": {
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {
@@ -2476,19 +2476,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FastReport.Compat/2021.2.3": {
+    "FastReport.Compat/2021.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0VPRb6+K3ZEmikganQov8rVrwEBv1hAe9G9NQkvQYgkr7pkifb8XRtKhN9kNRCHfCDYICABpI8K9rX4QsDg8uw==",
-      "path": "fastreport.compat/2021.2.3",
-      "hashPath": "fastreport.compat.2021.2.3.nupkg.sha512"
+      "sha512": "sha512-GIWCBqxu8+Cnv6xad8LSCPTYCMDId6HPmUqtYfC1JqCVN4ppzAgWZWcbr5uZf+isyHGTADSlNYBi7RZLMA7a4w==",
+      "path": "fastreport.compat/2021.2.7",
+      "hashPath": "fastreport.compat.2021.2.7.nupkg.sha512"
     },
-    "FastReport.OpenSource/2021.3.6": {
+    "FastReport.OpenSource/2021.3.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zOLcObQzeI03PxD5xa86eecRnuI4ZstJUSKLF0VvTzlAUUcCVo+O7uhj9VxEWo2jfZrE9enOKF/3BkuMs2TqeQ==",
-      "path": "fastreport.opensource/2021.3.6",
-      "hashPath": "fastreport.opensource.2021.3.6.nupkg.sha512"
+      "sha512": "sha512-V7pp84GGvj/6wh1rXFt9bz+adfnzNS2Lzey/c1Ve9y/XnKlJyUr1hFKHZhNwS9H1e4UXotrj89fot6IJdlvyCg==",
+      "path": "fastreport.opensource/2021.3.13",
+      "hashPath": "fastreport.opensource.2021.3.13.nupkg.sha512"
     },
     "FastReport.OpenSource.Export.PdfSimple/2021.3.6": {
       "type": "package",

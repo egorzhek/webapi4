@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "FastReport.Compat/2021.2.3": {
+      "FastReport.Compat/2021.2.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.3.1",
@@ -26,10 +26,10 @@
           }
         }
       },
-      "FastReport.OpenSource/2021.3.6": {
+      "FastReport.OpenSource/2021.3.13": {
         "type": "package",
         "dependencies": {
-          "FastReport.Compat": "2021.2.3",
+          "FastReport.Compat": "2021.2.7",
           "System.Drawing.Common": "4.6.1",
           "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.4.0",
@@ -625,10 +625,10 @@
     }
   },
   "libraries": {
-    "FastReport.Compat/2021.2.3": {
-      "sha512": "0VPRb6+K3ZEmikganQov8rVrwEBv1hAe9G9NQkvQYgkr7pkifb8XRtKhN9kNRCHfCDYICABpI8K9rX4QsDg8uw==",
+    "FastReport.Compat/2021.2.7": {
+      "sha512": "GIWCBqxu8+Cnv6xad8LSCPTYCMDId6HPmUqtYfC1JqCVN4ppzAgWZWcbr5uZf+isyHGTADSlNYBi7RZLMA7a4w==",
       "type": "package",
-      "path": "fastreport.compat/2021.2.3",
+      "path": "fastreport.compat/2021.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -636,9 +636,9 @@
         "build/netcoreapp3.0/FastReport.Compat.targets",
         "build/netcoreapp3.0/lib/Any/FastReport.Compat.dll",
         "build/netcoreapp3.0/lib/Win/FastReport.Compat.dll",
-        "fastreport.compat.2021.2.3.nupkg.sha512",
+        "fastreport.compat.2021.2.7.nupkg.sha512",
         "fastreport.compat.nuspec",
-        "frlogo-big.png",
+        "frlogo192.png",
         "lib/net40/FastReport.Compat.dll",
         "lib/net5.0-windows7.0/FastReport.Compat.dll",
         "lib/netcoreapp3.0/_._",
@@ -647,17 +647,17 @@
         "runtimes/any/lib/netcoreapp3.0/FastReport.Compat.dll"
       ]
     },
-    "FastReport.OpenSource/2021.3.6": {
-      "sha512": "zOLcObQzeI03PxD5xa86eecRnuI4ZstJUSKLF0VvTzlAUUcCVo+O7uhj9VxEWo2jfZrE9enOKF/3BkuMs2TqeQ==",
+    "FastReport.OpenSource/2021.3.13": {
+      "sha512": "V7pp84GGvj/6wh1rXFt9bz+adfnzNS2Lzey/c1Ve9y/XnKlJyUr1hFKHZhNwS9H1e4UXotrj89fot6IJdlvyCg==",
       "type": "package",
-      "path": "fastreport.opensource/2021.3.6",
+      "path": "fastreport.opensource/2021.3.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/FastReport.OpenSource.props",
         "buildMultiTargeting/FastReport.OpenSource.props",
         "buildTransitive/FastReport.OpenSource.props",
-        "fastreport.opensource.2021.3.6.nupkg.sha512",
+        "fastreport.opensource.2021.3.13.nupkg.sha512",
         "fastreport.opensource.nuspec",
         "frlogo-big.png",
         "lib/net40/FastReport.dll",
@@ -1815,7 +1815,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "FastReport.OpenSource >= 2021.3.6",
+      "FastReport.OpenSource >= 2021.3.13",
       "FastReport.OpenSource.Export.PdfSimple >= 2021.3.6",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.7",
       "Microsoft.CodeAnalysis.CSharp >= 3.10.0",
@@ -1876,7 +1876,7 @@
         "dependencies": {
           "FastReport.OpenSource": {
             "target": "Package",
-            "version": "[2021.3.6, )"
+            "version": "[2021.3.13, )"
           },
           "FastReport.OpenSource.Export.PdfSimple": {
             "target": "Package",

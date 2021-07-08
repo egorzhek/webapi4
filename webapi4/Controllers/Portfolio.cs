@@ -54,9 +54,61 @@ namespace webapi4.Controllers
                 using (SqlConnection connection =
                 new SqlConnection(connectionString))
                 {
+                    
+
+                    connection.Open();
+
+
+                    string activeString = @"
+declare
+	@Investor_Id int = " + Investor_Id + @",
+	@BeginDate Date = CONVERT(Date, '" + DateFrom + @"', 103),
+	@BeginAssetsValue numeric(28, 7),
+	@EndDate Date = CONVERT(Date, '" + DateTo + @"', 103),
+	@EndAssetsValue numeric(28, 7);
+
+select top 1
+	@BeginAssetsValue = AssetsValue
+from [CacheDB].[dbo].[InvestorDateAssets]
+where Investor_Id = @Investor_Id
+and [Date] <= @BeginDate
+order by [Date] desc;
+
+select top 1
+	@EndAssetsValue = AssetsValue
+from [CacheDB].[dbo].[InvestorDateAssets]
+where Investor_Id = @Investor_Id
+and [Date] <= @EndDate
+order by [Date] desc;
+
+select
+	BeginAssetsValue = isnull(@BeginAssetsValue,0),
+	EndAssetsValue = isnull(@EndAssetsValue,0);
+";
+
+                    string BeginAssetsValue, EndAssetsValue;
+
+                    SqlCommand accommand = new SqlCommand(activeString, connection);
+                    //command.Parameters.AddWithValue("@pricePoint", paramValue);
+
+                    using (SqlDataAdapter sda = new SqlDataAdapter(accommand))
+                    {
+                        using (DataSet vDataSet = new DataSet())
+                        {
+                            sda.Fill(vDataSet);
+
+                            BeginAssetsValue = vDataSet.Tables[0].Rows[0]["BeginAssetsValue"].ToString();
+                            EndAssetsValue = vDataSet.Tables[0].Rows[0]["EndAssetsValue"].ToString();
+                        }
+                    }
+
+
+
+
+
                     string queryString = @"
 select
-[ActiveName] = 'Активы на " + DateTo +  @"', [ActiveValue] = 150000.45
+[ActiveName] = 'Активы на " + DateTo + @"', [ActiveValue] = " + EndAssetsValue + @"
 union all
 select 'Пополнения', 85000.45
 union all
@@ -67,8 +119,6 @@ union all
 select 'Купоны', 2120.11";
                     SqlCommand command = new SqlCommand(queryString, connection);
                     //command.Parameters.AddWithValue("@pricePoint", paramValue);
-
-                    connection.Open();
 
                     using (SqlDataAdapter sda = new SqlDataAdapter(command))
                     {
@@ -117,7 +167,7 @@ select
 [InvestorName] = 'Дмитрий Иванович - " + Investor_Id + @"',
 [ActiveValue] = 50.00,
 [BeginActive] = 'Активы на " + DateFrom + @"',
-[BeginActiveVal] = 15000.34,
+[BeginActiveVal] = " + BeginAssetsValue + @",
 [ProfitPeriod] = 'Доход за период " + DateFrom + @" - " + DateTo + @"',
 [ProfitPeriodVal] = 14885.67,
 [ProfitProcent] = 12.33

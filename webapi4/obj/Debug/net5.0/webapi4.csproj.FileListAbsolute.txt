@@ -303,6 +303,7 @@ C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\Microsoft.CodeAnaly
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\ScottPlot.dll
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\System.Data.SqlClient.dll
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -378,5 +379,3 @@ C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\ref\webapi4.dll
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.pdb
 C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.genruntimeconfig.cache
-C:\Users\admin\source\repos\webapi4\webapi4\bin\Debug\net5.0\ScottPlot.dll
-C:\Users\admin\source\repos\webapi4\webapi4\obj\Debug\net5.0\webapi4.csproj.AssemblyReference.cache

@@ -67,6 +67,10 @@
               "target": "Package",
               "version": "[3.10.0, )"
             },
+            "Microsoft.CodeAnalysis.VisualBasic": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.14, )"

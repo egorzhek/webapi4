@@ -38,6 +38,7 @@
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.7",
           "Microsoft.CodeAnalysis.CSharp": "3.10.0",
           "Microsoft.CodeAnalysis.Common": "3.10.0",
+          "Microsoft.CodeAnalysis.VisualBasic": "3.10.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.14",
           "Newtonsoft.Json": "13.0.1",
           "ScottPlot": "4.1.16",
@@ -336,7 +337,7 @@
       "FastReport.Compat/2021.2.7": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.10.0",
-          "Microsoft.CodeAnalysis.VisualBasic": "3.3.1",
+          "Microsoft.CodeAnalysis.VisualBasic": "3.10.0",
           "System.Drawing.Common": "4.6.1",
           "System.Windows.Extensions": "4.6.0"
         },
@@ -556,59 +557,59 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic/3.3.1": {
+      "Microsoft.CodeAnalysis.VisualBasic/3.10.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Common": "3.10.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.300.119.46211"
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.1000.21.31005"
           }
         },
         "resources": {
-          "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
             "locale": "zh-Hant"
           }
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyModel/5.0.0": {
@@ -2546,12 +2547,12 @@
       "path": "microsoft.codeanalysis.razor/5.0.7",
       "hashPath": "microsoft.codeanalysis.razor.5.0.7.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.VisualBasic/3.3.1": {
+    "Microsoft.CodeAnalysis.VisualBasic/3.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-F7fc/G+0ocOYkKSCJ7Y8Q7eAEkAdG5RYODI9FtSl2Hm8zIDBVA3NccCm98gaOvCamLfMHYqeOjpb3yJnnw3m/w==",
-      "path": "microsoft.codeanalysis.visualbasic/3.3.1",
-      "hashPath": "microsoft.codeanalysis.visualbasic.3.3.1.nupkg.sha512"
+      "sha512": "sha512-SxTv3WjU2S/aasSQW3WUlIqxKZVZqv8s8ZJHM9KX2HFH5HLXKoqlm001f2Y9F8TbsZrsC6oqZ1p8vcbSgYbw6w==",
+      "path": "microsoft.codeanalysis.visualbasic/3.10.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.3.10.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/5.0.0": {
       "type": "package",

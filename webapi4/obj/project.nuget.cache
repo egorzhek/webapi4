@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IFAOxzuyJyOSgAl07vNu5QX9pcktMX1NgsLpdFCFDGfl1nJADRHszmM/kdv/S8aWpiWEG9QXJmlCglC3z5wf8Q==",
+  "dgSpecHash": "EM7pCJGdCL5iEQT1gc6t9HxtBFkguNizn1tiQ/xmfu3c5dHTCxfmCv6IkqyB/XiYCslWJJpYa22FESuSMetDng==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\webapi4\\webapi4\\webapi4.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codeanalysis.common\\3.10.0\\microsoft.codeanalysis.common.3.10.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.10.0\\microsoft.codeanalysis.csharp.3.10.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.codeanalysis.razor\\5.0.7\\microsoft.codeanalysis.razor.5.0.7.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.3.1\\microsoft.codeanalysis.visualbasic.3.3.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.10.0\\microsoft.codeanalysis.visualbasic.3.10.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencymodel\\5.0.0\\microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
@@ -41,16 +41,5 @@
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.windows.extensions\\4.6.0\\system.windows.extensions.4.6.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.VisualBasic 3.3.1 требуется Microsoft.CodeAnalysis.Common (= 3.3.1), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 3.10.0.",
-      "libraryId": "Microsoft.CodeAnalysis.Common",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

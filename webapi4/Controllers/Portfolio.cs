@@ -140,7 +140,7 @@ select [ActiveName] = 'Акции', [ActiveValue] = 50.00
 union all
 select 'Облигации', 20.00
 union all
-select 'Валюта', 20.00
+select 'Валюта', -20.00
 union all
 select 'Фонды', 10.00";
 

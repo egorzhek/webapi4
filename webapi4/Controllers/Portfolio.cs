@@ -12,6 +12,7 @@ using FastReport.Utils;
 using FastReport;
 using FastReport.Export.Html;
 using FastReport.Export.PdfSimple;
+using System.Drawing;
 
 using Microsoft.AspNetCore.Hosting;
 
@@ -50,6 +51,7 @@ namespace webapi4.Controllers
 
                 decimal[] values;
                 string[] labels;
+                Color[] sliceColors;
 
                 using (SqlConnection connection =
                 new SqlConnection(connectionString))
@@ -140,7 +142,7 @@ select [ActiveName] = 'Акции', [ActiveValue] = 50.00
 union all
 select 'Облигации', 20.00
 union all
-select 'Валюта', -20.00
+select 'Валюта', 20.00
 union all
 select 'Фонды', 10.00";
 
@@ -154,10 +156,48 @@ select 'Фонды', 10.00";
 
                             vDataSet2.Tables[0].TableName = "Seconddata";
 
-                            report.RegisterData(vDataSet2.Tables[0], "Seconddata");
+                            
 
                             values = vDataSet2.Tables[0].AsEnumerable().Select(s => s.Field<decimal>("ActiveValue")).ToArray<decimal>();
                             labels = vDataSet2.Tables[0].AsEnumerable().Select(s => s.Field<string>("ActiveName")).ToArray<string>();
+
+
+                            // формирование графика для определения массива цветов
+                            var plt0 = new ScottPlot.Plot(600, 400);
+
+                            // to double[]
+                            var ary0 = new double[values.Length];
+                            for (var ii = 0; ii < values.Length; ii++)
+                            {
+                                ary0[ii] = Convert.ToDouble(values[ii]);
+                            }
+
+
+                            var pie0 = plt0.AddPie(ary0);
+                            pie0.SliceLabels = labels;
+                            pie0.ShowPercentages = true;
+                            //pie.ShowValues = true;
+                            pie0.ShowLabels = true;
+
+
+                            pie0.DonutSize = .45;
+                            pie0.OutlineSize = 2;
+
+                            //plt.Legend();
+                            var image10 = plt0.Render();
+
+                            vDataSet2.Tables[0].Columns.Add("Color", typeof(String));
+                            var ddd = pie0.SliceFillColors;
+
+                            sliceColors = new Color[vDataSet2.Tables[0].Rows.Count];
+
+                            for (int i = 0; i < vDataSet2.Tables[0].Rows.Count; i++)
+                            {
+                                vDataSet2.Tables[0].Rows[i]["Color"] = ddd[i].Name;
+                                sliceColors[i] = ColorTranslator.FromHtml("#" + ddd[i].Name);
+                            }
+
+                            report.RegisterData(vDataSet2.Tables[0], "Seconddata");
                         }
                     }
 
@@ -201,13 +241,17 @@ select
 
 
                 var pie = plt.AddPie(ary);
-                pie.SliceLabels = labels;
-                pie.ShowPercentages = true;
+                //pie.SliceLabels = labels;
+                //pie.ShowPercentages = true;
                 //pie.ShowValues = true;
-                pie.ShowLabels = true;
+                pie.SliceFillColors = sliceColors;
+                //pie.ShowLabels = true;
+                //pie.CenterFont.Color = color1;
+                pie.DonutLabel = @"100%
+4 актива";
 
 
-                pie.DonutSize = .45;
+                pie.DonutSize = .8;
                 pie.OutlineSize = 2;
 
                 //plt.Legend();
@@ -217,8 +261,6 @@ select
                 // передача графика в картинку
                 var graph = report.FindObject("Picture1") as PictureObject;
                 graph.Image = image1;
-
-
 
 
 

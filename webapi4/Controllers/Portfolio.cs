@@ -266,6 +266,7 @@ select
 
                 report.Prepare();
 
+
                 using (PDFSimpleExport pdfExport = new PDFSimpleExport())
                 {
                     using (MemoryStream stream = new MemoryStream())
@@ -281,6 +282,24 @@ select
                         return File(stream.ToArray(), file_type, file_name);
                     }
                 }
+
+                // Creating the HTML export
+                /*
+                using (HTMLExport html = new HTMLExport())
+                {
+                     using (MemoryStream stream = new MemoryStream())
+                     {
+                           report.Export(html, stream);
+
+                           // Тип файла - content-type
+                           string file_type = "application/octet-stream";
+                           // Имя файла - необязательно
+                           string file_name = "Test.html";
+
+                           return File(stream.ToArray(), file_type, file_name);
+                     }
+                }
+                */
             }
             catch (Exception exception)
             {
